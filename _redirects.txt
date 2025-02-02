@@ -1,0 +1,3 @@
+# _redirects file
+/old-page  /new-page  301
+/old-contact  /contact  302
