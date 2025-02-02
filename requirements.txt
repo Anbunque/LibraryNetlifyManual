@@ -5,4 +5,4 @@ Flask-Cors==4.0.0  # For handling CORS issues in APIs
 Flask-PyMongo==2.3.0  # Simplifies MongoDB integration with Flask
 dnspython==2.4.2  # Required for MongoDB connection with a cloud-based URI
 python-dotenv==1.0.1  # To manage environment variables (.env files)
-gunicorn==21.2.0  # Production-ready server for Flask apps (if deploying)
+#gunicorn==21.2.0  # Production-ready server for Flask apps (if deploying)
