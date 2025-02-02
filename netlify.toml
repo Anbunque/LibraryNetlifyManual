@@ -1,5 +1,6 @@
 [build]
   functions = "functions"  # Folder where your functions are located
+  command = "pip install -r requirements.txt"
 
 
 [[plugins]]
@@ -8,8 +9,8 @@
 [functions]
 directory = "functions"
 
-[build]
-  command = "pip install -r requirements.txt"
+
+  
 
 
 
