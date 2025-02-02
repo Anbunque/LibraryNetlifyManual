@@ -1,14 +1,20 @@
 [build]
   functions = "functions"  # Folder where your functions are located
 
-[functions]
-directory = "functions"
-
 
 [[plugins]]
   package = "@netlify/plugin-functions-install-core"  # Ensures necessary dependencies for functions are installed
 
+[functions]
+directory = "functions"
+
+[build]
+  command = "pip install -r requirements.txt"
+
+
+
+
+
 [dev]
-  command = "python3 functions/api.py"  # The command to run your local dev server
-  targetPort = 5000  # Port the app listens to locally
-  port = 8888  # Port used by the local Netlify dev server
+  command = "gunicorn wsgi:app" 
+
